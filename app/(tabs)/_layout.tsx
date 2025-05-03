@@ -1,12 +1,10 @@
+import { HapticTab } from '@/app-example/components/HapticTab';
+import { IconSymbol } from '@/app-example/components/ui/IconSymbol.ios';
+import TabBarBackground from '@/app-example/components/ui/TabBarBackground';
 import { Tabs } from 'expo-router';
 import React from 'react';
-import { Platform } from 'react-native';
-
-import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
-import TabBarBackground from '@/components/ui/TabBarBackground';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
+import { Platform, useColorScheme } from 'react-native';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
